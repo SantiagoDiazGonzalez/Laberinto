@@ -9,7 +9,6 @@
 #include "MazeGenerator.h"
 #include "LaberintoSolver.h"
 
-
 void dibujarPunto(unsigned x, unsigned y, int valor);
 
 void dibujarLaberinto(MazeGenerator *m);
@@ -94,7 +93,7 @@ void dibujarPunto(unsigned x, unsigned y, int valor) {
  * @param ms
  */
 void delay(__useconds_t ms) {
-    QCoreApplication::processEvents(QEventLoop::AllEvents, 1000);
+    //QCoreApplication::processEvents(QEventLoop::AllEvents, 1000);
     usleep(ms * 1000);
     QCoreApplication::processEvents(QEventLoop::AllEvents, 1000);
 }
